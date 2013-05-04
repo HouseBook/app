@@ -24,6 +24,7 @@
 		0C1BC42417356AB6004F1E75 /* HBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BC42317356AB6004F1E75 /* HBSecondViewController.m */; };
 		0C1BC42617356AB6004F1E75 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42517356AB6004F1E75 /* second.png */; };
 		0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42717356AB6004F1E75 /* second@2x.png */; };
+		0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC42E17356B86004F1E75 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0C1BC42317356AB6004F1E75 /* HBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBSecondViewController.m; sourceTree = "<group>"; };
 		0C1BC42517356AB6004F1E75 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		0C1BC42717356AB6004F1E75 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		0C1BC42E17356B86004F1E75 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */,
 				0C1BC3FE17356AB6004F1E75 /* UIKit.framework in Frameworks */,
 				0C1BC40017356AB6004F1E75 /* Foundation.framework in Frameworks */,
 				0C1BC40217356AB6004F1E75 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		0C1BC3F117356AB6004F1E75 = {
 			isa = PBXGroup;
 			children = (
+				0C1BC42E17356B86004F1E75 /* MapKit.framework */,
 				0C1BC40317356AB6004F1E75 /* Housebook */,
 				0C1BC3FC17356AB6004F1E75 /* Frameworks */,
 				0C1BC3FB17356AB6004F1E75 /* Products */,
