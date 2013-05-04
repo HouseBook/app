@@ -27,6 +27,7 @@
 		0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC42E17356B86004F1E75 /* MapKit.framework */; };
 		0C519E9D17359999001DF43F /* HBPropertyFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C519E9C17359999001DF43F /* HBPropertyFeatureController.m */; };
 		0CBBD9FF17359DBC007EEBCC /* HBFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */; };
+		0CBBDA011735A880007EEBCC /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBDA001735A880007EEBCC /* house.jpg */; };
 		30042BB117357529002ACE9D /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB017357528002ACE9D /* libiSpeechSDK.a */; };
 		30042BB31735754F002ACE9D /* iSpeechSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30042BB21735754F002ACE9D /* iSpeechSDK.bundle */; };
 		30042BB517357626002ACE9D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB417357626002ACE9D /* AudioToolbox.framework */; };
@@ -65,6 +66,7 @@
 		0C519E9C17359999001DF43F /* HBPropertyFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBPropertyFeatureController.m; sourceTree = "<group>"; };
 		0CBBD9FD17359DBC007EEBCC /* HBFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBFeatureController.h; sourceTree = "<group>"; };
 		0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBFeatureController.m; sourceTree = "<group>"; };
+		0CBBDA001735A880007EEBCC /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		30042BB017357528002ACE9D /* libiSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSpeechSDK.a; sourceTree = "<group>"; };
 		30042BB21735754F002ACE9D /* iSpeechSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSpeechSDK.bundle; sourceTree = "<group>"; };
 		30042BB417357626002ACE9D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -137,6 +139,7 @@
 		0C1BC40317356AB6004F1E75 /* Housebook */ = {
 			isa = PBXGroup;
 			children = (
+				0CBBDA001735A880007EEBCC /* house.jpg */,
 				30042BBC173577C9002ACE9D /* Headers */,
 				0C1BC40C17356AB6004F1E75 /* HBAppDelegate.h */,
 				0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */,
@@ -252,6 +255,7 @@
 				0C1BC42617356AB6004F1E75 /* second.png in Resources */,
 				0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */,
 				30042BB31735754F002ACE9D /* iSpeechSDK.bundle in Resources */,
+				0CBBDA011735A880007EEBCC /* house.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
