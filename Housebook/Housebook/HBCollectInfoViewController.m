@@ -8,9 +8,13 @@
 
 #import "HBCollectInfoViewController.h"
 #import "Headers/iSpeechSDK.h"
+#import "JSONModelLib.h"
+#import "HBOpinion.h"
+#import "HUD.h"
 
 
 @implementation HBCollectInfoViewController 
+HBOpinion * _opinion;
 
 @synthesize SpeechDebug;
 
@@ -35,6 +39,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)sendOpinionData
+{
+    NSString* jsonURLString = @"http://housebook.jit.su/audio";
+    NSString* ctype = @"application/json";
+    
+    //show loader view
+    [HUD showUIBlockingIndicatorWithText:@"Fetching JSON"];
+ 
+    [JSONHTTPClient setRequestContentType: ctype];
+    
+    [JSONHTTPClient postJSONFromURLWithString:jsonURLString
+                                   bodyString:_opinion.toJSONString
+                                   completion:^(NSDictionary *json, JSONModelError *err) {
+                                       
+                                       //hide the loader view
+                                       [HUD hideUIBlockingIndicator];
+                                       
+                                       //json sent
+                                       NSLog(@"Data: %@", _opinion.toJSONString);
+                                       NSLog(@"Error: %@", [err localizedDescription]);
+                                   }];
+}
+
+//Speech Recognition
+
 - (IBAction)TalkToMe:(UIButton *)sender {
     [self recognize:nil];
 }
@@ -58,8 +88,8 @@
 	
 	[recognition setDelegate:self];
 	
-	[recognition addAlias:@"officers" forItems:[NSArray arrayWithObjects:@"Mike", @"Rocco", @"Grant", @"Alex", nil]];
-	[recognition addCommand:@"call %officers%"];
+	[recognition addAlias:@"awesome" forItems:[NSArray arrayWithObjects:@"Kevin", @"Tim", @"Mitch", @"Alex", nil]];
+	[recognition addCommand:@"call %awesome%"];
 	
 	if(![recognition listen:&err]) {
 		NSLog(@"ERROR: %@", err);
@@ -76,6 +106,16 @@
 	NSLog(@"Result: %@", result.text);
 	
 	[SpeechDebug setText:result.text];
+     _opinion = [[HBOpinion alloc] init];
+    
+    
+    _opinion.mlsid = @"123";
+    _opinion.name = @"Bedroom #1";
+    _opinion.user = @"timtheboss";
+    _opinion.audio_raw = @"0";
+    _opinion.audio_text = result.text;
+    
+    [self sendOpinionData];
 }
 
 - (void)recognition:(ISSpeechRecognition *)speechRecognition didFailWithError:(NSError *)error {

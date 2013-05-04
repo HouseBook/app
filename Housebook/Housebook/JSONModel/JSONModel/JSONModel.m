@@ -20,6 +20,7 @@
 #import "JSONModelClassProperty.h"
 #import "JSONModelArray.h"
 
+
 #pragma mark - class static variables
 static NSArray* allowedJSONTypes = nil;
 static NSArray* allowedPrimitiveTypes = nil;

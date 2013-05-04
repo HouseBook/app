@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Headers/ISpeechSDK.h"
+#import "JSONModelLib.h"
+#import "HBOpinion.h"
+#import "HUD.h"
 
 @interface HBCollectInfoViewController : UIViewController <ISSpeechRecognitionDelegate>
 - (IBAction)TalkToMe:(UIButton *)sender;

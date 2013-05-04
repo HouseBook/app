@@ -10,4 +10,10 @@
 
 @interface HBOpinion : JSONModel
 
+@property (strong, nonatomic) NSString* mlsid;
+@property (strong, nonatomic) NSString* user;
+@property (strong, nonatomic) NSString* name;
+@property (strong, nonatomic) NSString* audio_raw;
+@property (strong, nonatomic) NSString* audio_text;
+
 @end
