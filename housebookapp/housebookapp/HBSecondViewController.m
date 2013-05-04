@@ -13,11 +13,12 @@
 @end
 
 @implementation HBSecondViewController
+@synthesize mapView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.mapView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +26,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+}
+
+
 
 @end
