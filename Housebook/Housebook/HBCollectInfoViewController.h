@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Headers/ISpeechSDK.h"
 
-@interface HBCollectInfoViewController : UIViewController
+@interface HBCollectInfoViewController : UIViewController <ISSpeechRecognitionDelegate>
 - (IBAction)TalkToMe:(UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UILabel *SpeechDebug;
