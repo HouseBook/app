@@ -36,7 +36,7 @@
 }
 
 - (IBAction)TalkToMe:(UIButton *)sender {
-    
+    [self recognize:nil];
 }
 
 - (IBAction)recognize:(id)sender {
