@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HBFeatureController : UIViewController
+@interface HBFeatureController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HBPropertyFeatureController : UIViewController
+@interface HBPropertyFeatureController : UIViewController <UITableViewDataSource,UITableViewDelegate>
+
+
+
 
 @end

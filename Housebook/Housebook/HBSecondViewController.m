@@ -20,6 +20,18 @@
     [super viewDidLoad];
     self.mapView.delegate = self;
     
+   
+}
+
+- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
+    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+    
+    point.coordinate = mapView.userLocation.coordinate;
+    point.title = @"Where am I?";
+    point.subtitle = @"I'm here!!!";
+    
+    [self.mapView addAnnotation:point];
+    
     MKCoordinateRegion myRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, 800, 800);
     [self.mapView setRegion:myRegion animated:YES];
 }
@@ -33,16 +45,13 @@
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     // Add an annotation
-    MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
-    point.coordinate = userLocation.coordinate;
-    point.title = @"Where am I?";
-    point.subtitle = @"I'm here!!!";
     
-    [self.mapView addAnnotation:point];
+
 }
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
     [self performSegueWithIdentifier:@"MapDrill" sender:self];
 }
+
 
 @end
