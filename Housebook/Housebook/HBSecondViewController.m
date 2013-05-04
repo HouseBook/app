@@ -20,11 +20,8 @@
     [super viewDidLoad];
     self.mapView.delegate = self;
     
-    //MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, 800, 800);
-   // self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
-   // MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-  //  [
-    //MKCo
+    MKCoordinateRegion myRegion = MKCoordinateRegionMakeWithDistance(mapView.userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:myRegion animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,7 +40,9 @@
     
     [self.mapView addAnnotation:point];
 }
-
-
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    [self performSegueWithIdentifier:@"MapDrill" sender:self];
+}
 
 @end
