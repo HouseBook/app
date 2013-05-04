@@ -24,6 +24,7 @@
 		0C333862173554D2001A1BCE /* HBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C333861173554D2001A1BCE /* HBSecondViewController.m */; };
 		0C333864173554D2001A1BCE /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C333863173554D2001A1BCE /* second.png */; };
 		0C333866173554D2001A1BCE /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C333865173554D2001A1BCE /* second@2x.png */; };
+		0C33386D173555B7001A1BCE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C33386C173555B7001A1BCE /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		0C333861173554D2001A1BCE /* HBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBSecondViewController.m; sourceTree = "<group>"; };
 		0C333863173554D2001A1BCE /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		0C333865173554D2001A1BCE /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		0C33386C173555B7001A1BCE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C33386D173555B7001A1BCE /* MapKit.framework in Frameworks */,
 				0C33383C173554D2001A1BCE /* UIKit.framework in Frameworks */,
 				0C33383E173554D2001A1BCE /* Foundation.framework in Frameworks */,
 				0C333840173554D2001A1BCE /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +72,7 @@
 		0C33382F173554D2001A1BCE = {
 			isa = PBXGroup;
 			children = (
+				0C33386C173555B7001A1BCE /* MapKit.framework */,
 				0C333841173554D2001A1BCE /* housebookapp */,
 				0C33383A173554D2001A1BCE /* Frameworks */,
 				0C333839173554D2001A1BCE /* Products */,
