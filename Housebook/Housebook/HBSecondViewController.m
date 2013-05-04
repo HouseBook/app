@@ -35,7 +35,6 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    
     // Add an annotation
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     point.coordinate = userLocation.coordinate;
@@ -44,7 +43,6 @@
     
     [self.mapView addAnnotation:point];
 }
-
 
 
 
