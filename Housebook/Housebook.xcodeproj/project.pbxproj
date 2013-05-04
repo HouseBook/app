@@ -31,6 +31,7 @@
 		30042BB717357635002ACE9D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB617357635002ACE9D /* SystemConfiguration.framework */; };
 		30042BB917357645002ACE9D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB817357645002ACE9D /* Security.framework */; };
 		30042BBB17357651002ACE9D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BBA17357651002ACE9D /* CFNetwork.framework */; };
+		30042BC517358487002ACE9D /* HBCollectInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042BC417358487002ACE9D /* HBCollectInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		30042BC0173577C9002ACE9D /* ISSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionResult.h; sourceTree = "<group>"; };
 		30042BC1173577C9002ACE9D /* ISSpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesis.h; sourceTree = "<group>"; };
 		30042BC2173577C9002ACE9D /* ISSpeechSynthesisVoices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesisVoices.h; sourceTree = "<group>"; };
+		30042BC317358487002ACE9D /* HBCollectInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCollectInfoViewController.h; sourceTree = "<group>"; };
+		30042BC417358487002ACE9D /* HBCollectInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCollectInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				0C1BC42517356AB6004F1E75 /* second.png */,
 				0C1BC42717356AB6004F1E75 /* second@2x.png */,
 				0C1BC40417356AB6004F1E75 /* Supporting Files */,
+				30042BC317358487002ACE9D /* HBCollectInfoViewController.h */,
+				30042BC417358487002ACE9D /* HBCollectInfoViewController.m */,
 			);
 			path = Housebook;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				0C1BC40E17356AB6004F1E75 /* HBAppDelegate.m in Sources */,
 				0C1BC41D17356AB6004F1E75 /* HBFirstViewController.m in Sources */,
 				0C1BC42417356AB6004F1E75 /* HBSecondViewController.m in Sources */,
+				30042BC517358487002ACE9D /* HBCollectInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

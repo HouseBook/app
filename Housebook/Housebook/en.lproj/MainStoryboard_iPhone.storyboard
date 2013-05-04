@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="odn-zK-xdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="odn-zK-xdH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -33,6 +33,44 @@
             </objects>
             <point key="canvasLocation" x="288" y="-49"/>
         </scene>
+        <!--View Controller - Awesome Info Capture-->
+        <scene sceneID="w5d-FJ-mTb">
+            <objects>
+                <viewController id="lOn-LP-Df3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ujh-hk-4Gj">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKd-Ca-Xch"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7F-Mp-EPi">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Talk to me Baby!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rKd-Ca-Xch" firstAttribute="leading" secondItem="Ujh-hk-4Gj" secondAttribute="leading" type="default" id="1Gl-3c-jRn"/>
+                            <constraint firstItem="rKd-Ca-Xch" firstAttribute="top" secondItem="Ujh-hk-4Gj" secondAttribute="top" type="default" id="LdZ-RS-c0A"/>
+                            <constraint firstItem="rKd-Ca-Xch" firstAttribute="bottom" secondItem="Ujh-hk-4Gj" secondAttribute="bottom" type="default" id="TSr-ze-Ksk"/>
+                            <constraint firstItem="rKd-Ca-Xch" firstAttribute="trailing" secondItem="Ujh-hk-4Gj" secondAttribute="trailing" type="default" id="V0g-rS-JQr"/>
+                            <constraint firstItem="O7F-Mp-EPi" firstAttribute="centerX" secondItem="rKd-Ca-Xch" secondAttribute="centerX" type="default" id="dKi-ch-Hk1"/>
+                            <constraint firstAttribute="bottom" secondItem="O7F-Mp-EPi" secondAttribute="bottom" constant="46" id="zdr-NT-C6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Awesome Info Capture" id="ta0-Fz-jWH">
+                        <barButtonItem key="backBarButtonItem" title="Property" id="jbc-58-u75"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhM-En-Ued" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="299" y="463"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="BK7-Eb-zSP">
             <objects>
@@ -56,6 +94,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwk-ft-sVD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="cYi-PG-hyt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="Use My Location">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,15 +175,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6n-0u-LSQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="CjB-bv-Pso"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Awesome Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lOn-LP-Df3" kind="push" id="PJQ-so-82a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RqS-Nu-tlr" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="15" id="08h-GK-cuG"/>
                             <constraint firstAttribute="trailing" secondItem="Jrr-C2-ejV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2gX-2T-89z"/>
+                            <constraint firstItem="W6n-0u-LSQ" firstAttribute="centerX" secondItem="sjF-N0-8D6" secondAttribute="centerX" type="default" id="4gz-MD-HIm"/>
                             <constraint firstAttribute="trailing" secondItem="uOn-kW-rAl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5T5-JH-Her"/>
                             <constraint firstAttribute="trailing" secondItem="5AT-jh-pXt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BAh-c8-54h"/>
                             <constraint firstItem="Shj-xX-WaU" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" constant="28" id="Bla-Xp-VX8"/>
                             <constraint firstItem="XZz-kJ-m3q" firstAttribute="leading" secondItem="uOn-kW-rAl" secondAttribute="leading" type="default" id="Bnn-B2-tHn"/>
+                            <constraint firstAttribute="bottom" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="125" id="C4r-Wh-Mo6"/>
                             <constraint firstItem="XZz-kJ-m3q" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="179" id="GOo-X7-Qae"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="leading" secondItem="J7U-6E-t90" secondAttribute="leading" type="default" id="HfX-dO-etv"/>
                             <constraint firstItem="J7U-6E-t90" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="183" id="IuA-es-enN"/>
@@ -152,16 +211,17 @@
                             <constraint firstItem="J7U-6E-t90" firstAttribute="baseline" secondItem="XZz-kJ-m3q" secondAttribute="baseline" type="default" id="SjH-H0-SS0"/>
                             <constraint firstItem="Rp2-TV-dE1" firstAttribute="baseline" secondItem="Jrr-C2-ejV" secondAttribute="baseline" type="default" id="TNJ-WF-cod"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="123" id="UvJ-G5-6gs"/>
-                            <constraint firstAttribute="bottom" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Uye-sB-PK3"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="127" id="Ve3-bw-8R5"/>
                             <constraint firstAttribute="trailing" secondItem="XZz-kJ-m3q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XXL-h0-Hmc"/>
-                            <constraint firstItem="Iwk-ft-sVD" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cHa-Ev-oo6"/>
+                            <constraint firstAttribute="bottom" secondItem="W6n-0u-LSQ" secondAttribute="bottom" constant="40" id="bQ8-40-vid"/>
+                            <constraint firstItem="5AT-jh-pXt" firstAttribute="baseline" secondItem="Iwk-ft-sVD" secondAttribute="baseline" type="default" id="bUT-aO-RWa"/>
+                            <constraint firstItem="Iwk-ft-sVD" firstAttribute="leading" secondItem="Rp2-TV-dE1" secondAttribute="leading" type="default" id="bay-ax-1R6"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="leading" secondItem="Shj-xX-WaU" secondAttribute="leading" type="default" id="e4V-bD-lko"/>
                             <constraint firstItem="Jrr-C2-ejV" firstAttribute="leading" secondItem="XZz-kJ-m3q" secondAttribute="leading" type="default" id="eEp-0u-0u2"/>
                             <constraint firstItem="Jrr-C2-ejV" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="238" id="g0p-kN-Uac"/>
+                            <constraint firstItem="5AT-jh-pXt" firstAttribute="leading" secondItem="Jrr-C2-ejV" secondAttribute="leading" type="default" id="jMA-tb-zRX"/>
                             <constraint firstItem="Rp2-TV-dE1" firstAttribute="leading" secondItem="J7U-6E-t90" secondAttribute="leading" type="default" id="jRr-eB-hil"/>
                             <constraint firstAttribute="trailing" secondItem="g1o-Ln-FQq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lXc-Zi-afd"/>
-                            <constraint firstAttribute="bottom" secondItem="5AT-jh-pXt" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="m3q-NE-WXs"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="baseline" secondItem="BZP-j2-yJd" secondAttribute="baseline" type="default" id="mY1-mr-X65"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="leading" secondItem="g1o-Ln-FQq" secondAttribute="leading" type="default" id="orV-hq-utt"/>
                         </constraints>
