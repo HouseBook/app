@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HBCollectInfoViewController : UIViewController
+- (IBAction)TalkToMe:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *SpeechDebug;
 
 @end

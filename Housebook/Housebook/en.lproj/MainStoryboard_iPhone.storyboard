@@ -12,14 +12,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-nO-40X"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-nO-40X">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="IdR-XL-Vm7"/>
+                                    <constraint firstAttribute="height" constant="504" id="q68-hk-wEE"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="X1b-nO-40X" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="pVO-CW-gDv"/>
-                            <constraint firstItem="X1b-nO-40X" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="qbQ-JB-5om"/>
-                            <constraint firstItem="X1b-nO-40X" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="sp9-n8-YbX"/>
-                            <constraint firstItem="X1b-nO-40X" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="us5-fG-oGC"/>
+                            <constraint firstAttribute="bottom" secondItem="X1b-nO-40X" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aTc-SX-rsc"/>
+                            <constraint firstItem="X1b-nO-40X" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="-29" id="viW-fv-6mn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HomeBook" id="ilR-nY-PD6">
@@ -33,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="288" y="-49"/>
         </scene>
-        <!--View Controller - Awesome Info Capture-->
+        <!--Collect Info View Controller - Awesome Info Capture-->
         <scene sceneID="w5d-FJ-mTb">
             <objects>
-                <viewController id="lOn-LP-Df3" sceneMemberID="viewController">
+                <viewController id="lOn-LP-Df3" customClass="HBCollectInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ujh-hk-4Gj">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,21 +54,38 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="TalkToMe:" destination="lOn-LP-Df3" eventType="touchUpInside" id="grs-xO-kH4"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rna-3V-Y8D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="1M3-fZ-kEd"/>
+                                    <constraint firstAttribute="width" constant="286" id="bNw-p8-ERc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rKd-Ca-Xch" firstAttribute="leading" secondItem="Ujh-hk-4Gj" secondAttribute="leading" type="default" id="1Gl-3c-jRn"/>
                             <constraint firstItem="rKd-Ca-Xch" firstAttribute="top" secondItem="Ujh-hk-4Gj" secondAttribute="top" type="default" id="LdZ-RS-c0A"/>
+                            <constraint firstItem="O7F-Mp-EPi" firstAttribute="top" secondItem="rna-3V-Y8D" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RsZ-Qh-rwa"/>
                             <constraint firstItem="rKd-Ca-Xch" firstAttribute="bottom" secondItem="Ujh-hk-4Gj" secondAttribute="bottom" type="default" id="TSr-ze-Ksk"/>
                             <constraint firstItem="rKd-Ca-Xch" firstAttribute="trailing" secondItem="Ujh-hk-4Gj" secondAttribute="trailing" type="default" id="V0g-rS-JQr"/>
                             <constraint firstItem="O7F-Mp-EPi" firstAttribute="centerX" secondItem="rKd-Ca-Xch" secondAttribute="centerX" type="default" id="dKi-ch-Hk1"/>
+                            <constraint firstItem="rna-3V-Y8D" firstAttribute="trailing" secondItem="Ujh-hk-4Gj" secondAttribute="trailing" type="default" id="hbh-rk-5Bc"/>
                             <constraint firstAttribute="bottom" secondItem="O7F-Mp-EPi" secondAttribute="bottom" constant="46" id="zdr-NT-C6a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Awesome Info Capture" id="ta0-Fz-jWH">
                         <barButtonItem key="backBarButtonItem" title="Property" id="jbc-58-u75"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="SpeechDebug" destination="rna-3V-Y8D" id="mis-BC-fes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhM-En-Ued" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,19 +221,18 @@
                             <constraint firstAttribute="trailing" secondItem="5AT-jh-pXt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BAh-c8-54h"/>
                             <constraint firstItem="Shj-xX-WaU" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" constant="28" id="Bla-Xp-VX8"/>
                             <constraint firstItem="XZz-kJ-m3q" firstAttribute="leading" secondItem="uOn-kW-rAl" secondAttribute="leading" type="default" id="Bnn-B2-tHn"/>
-                            <constraint firstAttribute="bottom" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="125" id="C4r-Wh-Mo6"/>
                             <constraint firstItem="XZz-kJ-m3q" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="179" id="GOo-X7-Qae"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="leading" secondItem="J7U-6E-t90" secondAttribute="leading" type="default" id="HfX-dO-etv"/>
                             <constraint firstItem="J7U-6E-t90" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="183" id="IuA-es-enN"/>
                             <constraint firstItem="g1o-Ln-FQq" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="69" id="K9U-5H-bCT"/>
                             <constraint firstItem="Shj-xX-WaU" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="73" id="ROz-eT-yfs"/>
+                            <constraint firstItem="W6n-0u-LSQ" firstAttribute="top" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SC1-q8-JSb"/>
                             <constraint firstItem="RqS-Nu-tlr" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" constant="63" id="ShH-em-NHV"/>
                             <constraint firstItem="J7U-6E-t90" firstAttribute="baseline" secondItem="XZz-kJ-m3q" secondAttribute="baseline" type="default" id="SjH-H0-SS0"/>
                             <constraint firstItem="Rp2-TV-dE1" firstAttribute="baseline" secondItem="Jrr-C2-ejV" secondAttribute="baseline" type="default" id="TNJ-WF-cod"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="123" id="UvJ-G5-6gs"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="127" id="Ve3-bw-8R5"/>
                             <constraint firstAttribute="trailing" secondItem="XZz-kJ-m3q" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="XXL-h0-Hmc"/>
-                            <constraint firstAttribute="bottom" secondItem="W6n-0u-LSQ" secondAttribute="bottom" constant="40" id="bQ8-40-vid"/>
                             <constraint firstItem="5AT-jh-pXt" firstAttribute="baseline" secondItem="Iwk-ft-sVD" secondAttribute="baseline" type="default" id="bUT-aO-RWa"/>
                             <constraint firstItem="Iwk-ft-sVD" firstAttribute="leading" secondItem="Rp2-TV-dE1" secondAttribute="leading" type="default" id="bay-ax-1R6"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="leading" secondItem="Shj-xX-WaU" secondAttribute="leading" type="default" id="e4V-bD-lko"/>
@@ -224,6 +243,7 @@
                             <constraint firstAttribute="trailing" secondItem="g1o-Ln-FQq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lXc-Zi-afd"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="baseline" secondItem="BZP-j2-yJd" secondAttribute="baseline" type="default" id="mY1-mr-X65"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="leading" secondItem="g1o-Ln-FQq" secondAttribute="leading" type="default" id="orV-hq-utt"/>
+                            <constraint firstAttribute="bottom" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="58" id="p9h-3u-nvM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HomeBook" id="WJQ-fi-hmY"/>
@@ -256,6 +276,13 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="HBCollectInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBCollectInfoViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="TalkToMe:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="SpeechDebug" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="HBSecondViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HBSecondViewController.h"/>
             <relationships>
