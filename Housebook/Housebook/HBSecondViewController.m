@@ -19,6 +19,12 @@
 {
     [super viewDidLoad];
     self.mapView.delegate = self;
+    
+    //MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, 800, 800);
+   // self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+   // MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+  //  [
+    //MKCo
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,8 +35,6 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
     
     // Add an annotation
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
@@ -40,6 +44,7 @@
     
     [self.mapView addAnnotation:point];
 }
+
 
 
 
