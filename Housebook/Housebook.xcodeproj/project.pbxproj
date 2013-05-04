@@ -25,6 +25,12 @@
 		0C1BC42617356AB6004F1E75 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42517356AB6004F1E75 /* second.png */; };
 		0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42717356AB6004F1E75 /* second@2x.png */; };
 		0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC42E17356B86004F1E75 /* MapKit.framework */; };
+		30042BB117357529002ACE9D /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB017357528002ACE9D /* libiSpeechSDK.a */; };
+		30042BB31735754F002ACE9D /* iSpeechSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 30042BB21735754F002ACE9D /* iSpeechSDK.bundle */; };
+		30042BB517357626002ACE9D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB417357626002ACE9D /* AudioToolbox.framework */; };
+		30042BB717357635002ACE9D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB617357635002ACE9D /* SystemConfiguration.framework */; };
+		30042BB917357645002ACE9D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB817357645002ACE9D /* Security.framework */; };
+		30042BBB17357651002ACE9D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BBA17357651002ACE9D /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +58,18 @@
 		0C1BC42517356AB6004F1E75 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		0C1BC42717356AB6004F1E75 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		0C1BC42E17356B86004F1E75 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		30042BB017357528002ACE9D /* libiSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiSpeechSDK.a; sourceTree = "<group>"; };
+		30042BB21735754F002ACE9D /* iSpeechSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iSpeechSDK.bundle; sourceTree = "<group>"; };
+		30042BB417357626002ACE9D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		30042BB617357635002ACE9D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		30042BB817357645002ACE9D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		30042BBA17357651002ACE9D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		30042BBD173577C9002ACE9D /* iSpeechSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSpeechSDK.h; sourceTree = "<group>"; };
+		30042BBE173577C9002ACE9D /* ISSpeechRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognition.h; sourceTree = "<group>"; };
+		30042BBF173577C9002ACE9D /* ISSpeechRecognitionLocales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionLocales.h; sourceTree = "<group>"; };
+		30042BC0173577C9002ACE9D /* ISSpeechRecognitionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechRecognitionResult.h; sourceTree = "<group>"; };
+		30042BC1173577C9002ACE9D /* ISSpeechSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesis.h; sourceTree = "<group>"; };
+		30042BC2173577C9002ACE9D /* ISSpeechSynthesisVoices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSpeechSynthesisVoices.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +77,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30042BBB17357651002ACE9D /* CFNetwork.framework in Frameworks */,
+				30042BB917357645002ACE9D /* Security.framework in Frameworks */,
+				30042BB717357635002ACE9D /* SystemConfiguration.framework in Frameworks */,
+				30042BB517357626002ACE9D /* AudioToolbox.framework in Frameworks */,
 				0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */,
 				0C1BC3FE17356AB6004F1E75 /* UIKit.framework in Frameworks */,
 				0C1BC40017356AB6004F1E75 /* Foundation.framework in Frameworks */,
 				0C1BC40217356AB6004F1E75 /* CoreGraphics.framework in Frameworks */,
+				30042BB117357529002ACE9D /* libiSpeechSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +95,10 @@
 		0C1BC3F117356AB6004F1E75 = {
 			isa = PBXGroup;
 			children = (
+				30042BBA17357651002ACE9D /* CFNetwork.framework */,
+				30042BB817357645002ACE9D /* Security.framework */,
+				30042BB617357635002ACE9D /* SystemConfiguration.framework */,
+				30042BB417357626002ACE9D /* AudioToolbox.framework */,
 				0C1BC42E17356B86004F1E75 /* MapKit.framework */,
 				0C1BC40317356AB6004F1E75 /* Housebook */,
 				0C1BC3FC17356AB6004F1E75 /* Frameworks */,
@@ -90,6 +117,7 @@
 		0C1BC3FC17356AB6004F1E75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30042BB017357528002ACE9D /* libiSpeechSDK.a */,
 				0C1BC3FD17356AB6004F1E75 /* UIKit.framework */,
 				0C1BC3FF17356AB6004F1E75 /* Foundation.framework */,
 				0C1BC40117356AB6004F1E75 /* CoreGraphics.framework */,
@@ -100,6 +128,7 @@
 		0C1BC40317356AB6004F1E75 /* Housebook */ = {
 			isa = PBXGroup;
 			children = (
+				30042BBC173577C9002ACE9D /* Headers */,
 				0C1BC40C17356AB6004F1E75 /* HBAppDelegate.h */,
 				0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */,
 				0C1BC41517356AB6004F1E75 /* MainStoryboard_iPhone.storyboard */,
@@ -120,6 +149,7 @@
 		0C1BC40417356AB6004F1E75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30042BB21735754F002ACE9D /* iSpeechSDK.bundle */,
 				0C1BC40517356AB6004F1E75 /* Housebook-Info.plist */,
 				0C1BC40617356AB6004F1E75 /* InfoPlist.strings */,
 				0C1BC40917356AB6004F1E75 /* main.m */,
@@ -129,6 +159,19 @@
 				0C1BC41317356AB6004F1E75 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30042BBC173577C9002ACE9D /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				30042BBD173577C9002ACE9D /* iSpeechSDK.h */,
+				30042BBE173577C9002ACE9D /* ISSpeechRecognition.h */,
+				30042BBF173577C9002ACE9D /* ISSpeechRecognitionLocales.h */,
+				30042BC0173577C9002ACE9D /* ISSpeechRecognitionResult.h */,
+				30042BC1173577C9002ACE9D /* ISSpeechSynthesis.h */,
+				30042BC2173577C9002ACE9D /* ISSpeechSynthesisVoices.h */,
+			);
+			path = Headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +236,7 @@
 				0C1BC42117356AB6004F1E75 /* first@2x.png in Resources */,
 				0C1BC42617356AB6004F1E75 /* second.png in Resources */,
 				0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */,
+				30042BB31735754F002ACE9D /* iSpeechSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +348,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Housebook/Housebook-Prefix.pch";
 				INFOPLIST_FILE = "Housebook/Housebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -315,6 +364,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Housebook/Housebook-Prefix.pch";
 				INFOPLIST_FILE = "Housebook/Housebook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -339,6 +393,7 @@
 				0C1BC42D17356AB6004F1E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

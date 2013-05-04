@@ -7,12 +7,17 @@
 //
 
 #import "HBAppDelegate.h"
+#import "Headers/iSpeechSDK.h"
 
 @implementation HBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    iSpeechSDK *sdk = [iSpeechSDK sharedSDK];
+    sdk.APIKey = @"1138f95e4197587b97fde06ca2f8a8df";
+    
     return YES;
 }
 							
