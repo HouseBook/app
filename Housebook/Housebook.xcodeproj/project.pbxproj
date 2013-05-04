@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1BC3FE17356AB6004F1E75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC3FD17356AB6004F1E75 /* UIKit.framework */; };
+		0C1BC40017356AB6004F1E75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC3FF17356AB6004F1E75 /* Foundation.framework */; };
+		0C1BC40217356AB6004F1E75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC40117356AB6004F1E75 /* CoreGraphics.framework */; };
+		0C1BC40817356AB6004F1E75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC40617356AB6004F1E75 /* InfoPlist.strings */; };
+		0C1BC40A17356AB6004F1E75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BC40917356AB6004F1E75 /* main.m */; };
+		0C1BC40E17356AB6004F1E75 /* HBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */; };
+		0C1BC41017356AB6004F1E75 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC40F17356AB6004F1E75 /* Default.png */; };
+		0C1BC41217356AB6004F1E75 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC41117356AB6004F1E75 /* Default@2x.png */; };
+		0C1BC41417356AB6004F1E75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC41317356AB6004F1E75 /* Default-568h@2x.png */; };
+		0C1BC41717356AB6004F1E75 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC41517356AB6004F1E75 /* MainStoryboard_iPhone.storyboard */; };
+		0C1BC41A17356AB6004F1E75 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC41817356AB6004F1E75 /* MainStoryboard_iPad.storyboard */; };
+		0C1BC41D17356AB6004F1E75 /* HBFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BC41C17356AB6004F1E75 /* HBFirstViewController.m */; };
+		0C1BC41F17356AB6004F1E75 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC41E17356AB6004F1E75 /* first.png */; };
+		0C1BC42117356AB6004F1E75 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42017356AB6004F1E75 /* first@2x.png */; };
+		0C1BC42417356AB6004F1E75 /* HBSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1BC42317356AB6004F1E75 /* HBSecondViewController.m */; };
+		0C1BC42617356AB6004F1E75 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42517356AB6004F1E75 /* second.png */; };
+		0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42717356AB6004F1E75 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1BC3FA17356AB6004F1E75 /* Housebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Housebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1BC3FD17356AB6004F1E75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C1BC3FF17356AB6004F1E75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C1BC40117356AB6004F1E75 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C1BC40517356AB6004F1E75 /* Housebook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Housebook-Info.plist"; sourceTree = "<group>"; };
+		0C1BC40717356AB6004F1E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C1BC40917356AB6004F1E75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C1BC40B17356AB6004F1E75 /* Housebook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Housebook-Prefix.pch"; sourceTree = "<group>"; };
+		0C1BC40C17356AB6004F1E75 /* HBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBAppDelegate.h; sourceTree = "<group>"; };
+		0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAppDelegate.m; sourceTree = "<group>"; };
+		0C1BC40F17356AB6004F1E75 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0C1BC41117356AB6004F1E75 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0C1BC41317356AB6004F1E75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0C1BC41617356AB6004F1E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0C1BC41917356AB6004F1E75 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0C1BC41B17356AB6004F1E75 /* HBFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBFirstViewController.h; sourceTree = "<group>"; };
+		0C1BC41C17356AB6004F1E75 /* HBFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBFirstViewController.m; sourceTree = "<group>"; };
+		0C1BC41E17356AB6004F1E75 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		0C1BC42017356AB6004F1E75 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		0C1BC42217356AB6004F1E75 /* HBSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBSecondViewController.h; sourceTree = "<group>"; };
+		0C1BC42317356AB6004F1E75 /* HBSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBSecondViewController.m; sourceTree = "<group>"; };
+		0C1BC42517356AB6004F1E75 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		0C1BC42717356AB6004F1E75 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C1BC3F717356AB6004F1E75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1BC3FE17356AB6004F1E75 /* UIKit.framework in Frameworks */,
+				0C1BC40017356AB6004F1E75 /* Foundation.framework in Frameworks */,
+				0C1BC40217356AB6004F1E75 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C1BC3F117356AB6004F1E75 = {
+			isa = PBXGroup;
+			children = (
+				0C1BC40317356AB6004F1E75 /* Housebook */,
+				0C1BC3FC17356AB6004F1E75 /* Frameworks */,
+				0C1BC3FB17356AB6004F1E75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C1BC3FB17356AB6004F1E75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C1BC3FA17356AB6004F1E75 /* Housebook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C1BC3FC17356AB6004F1E75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C1BC3FD17356AB6004F1E75 /* UIKit.framework */,
+				0C1BC3FF17356AB6004F1E75 /* Foundation.framework */,
+				0C1BC40117356AB6004F1E75 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C1BC40317356AB6004F1E75 /* Housebook */ = {
+			isa = PBXGroup;
+			children = (
+				0C1BC40C17356AB6004F1E75 /* HBAppDelegate.h */,
+				0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */,
+				0C1BC41517356AB6004F1E75 /* MainStoryboard_iPhone.storyboard */,
+				0C1BC41817356AB6004F1E75 /* MainStoryboard_iPad.storyboard */,
+				0C1BC41B17356AB6004F1E75 /* HBFirstViewController.h */,
+				0C1BC41C17356AB6004F1E75 /* HBFirstViewController.m */,
+				0C1BC41E17356AB6004F1E75 /* first.png */,
+				0C1BC42017356AB6004F1E75 /* first@2x.png */,
+				0C1BC42217356AB6004F1E75 /* HBSecondViewController.h */,
+				0C1BC42317356AB6004F1E75 /* HBSecondViewController.m */,
+				0C1BC42517356AB6004F1E75 /* second.png */,
+				0C1BC42717356AB6004F1E75 /* second@2x.png */,
+				0C1BC40417356AB6004F1E75 /* Supporting Files */,
+			);
+			path = Housebook;
+			sourceTree = "<group>";
+		};
+		0C1BC40417356AB6004F1E75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C1BC40517356AB6004F1E75 /* Housebook-Info.plist */,
+				0C1BC40617356AB6004F1E75 /* InfoPlist.strings */,
+				0C1BC40917356AB6004F1E75 /* main.m */,
+				0C1BC40B17356AB6004F1E75 /* Housebook-Prefix.pch */,
+				0C1BC40F17356AB6004F1E75 /* Default.png */,
+				0C1BC41117356AB6004F1E75 /* Default@2x.png */,
+				0C1BC41317356AB6004F1E75 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C1BC3F917356AB6004F1E75 /* Housebook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1BC42B17356AB6004F1E75 /* Build configuration list for PBXNativeTarget "Housebook" */;
+			buildPhases = (
+				0C1BC3F617356AB6004F1E75 /* Sources */,
+				0C1BC3F717356AB6004F1E75 /* Frameworks */,
+				0C1BC3F817356AB6004F1E75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Housebook;
+			productName = Housebook;
+			productReference = 0C1BC3FA17356AB6004F1E75 /* Housebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C1BC3F217356AB6004F1E75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HB;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = HouseBookApp.com;
+			};
+			buildConfigurationList = 0C1BC3F517356AB6004F1E75 /* Build configuration list for PBXProject "Housebook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C1BC3F117356AB6004F1E75;
+			productRefGroup = 0C1BC3FB17356AB6004F1E75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C1BC3F917356AB6004F1E75 /* Housebook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C1BC3F817356AB6004F1E75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1BC40817356AB6004F1E75 /* InfoPlist.strings in Resources */,
+				0C1BC41017356AB6004F1E75 /* Default.png in Resources */,
+				0C1BC41217356AB6004F1E75 /* Default@2x.png in Resources */,
+				0C1BC41417356AB6004F1E75 /* Default-568h@2x.png in Resources */,
+				0C1BC41717356AB6004F1E75 /* MainStoryboard_iPhone.storyboard in Resources */,
+				0C1BC41A17356AB6004F1E75 /* MainStoryboard_iPad.storyboard in Resources */,
+				0C1BC41F17356AB6004F1E75 /* first.png in Resources */,
+				0C1BC42117356AB6004F1E75 /* first@2x.png in Resources */,
+				0C1BC42617356AB6004F1E75 /* second.png in Resources */,
+				0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C1BC3F617356AB6004F1E75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1BC40A17356AB6004F1E75 /* main.m in Sources */,
+				0C1BC40E17356AB6004F1E75 /* HBAppDelegate.m in Sources */,
+				0C1BC41D17356AB6004F1E75 /* HBFirstViewController.m in Sources */,
+				0C1BC42417356AB6004F1E75 /* HBSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0C1BC40617356AB6004F1E75 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C1BC40717356AB6004F1E75 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0C1BC41517356AB6004F1E75 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C1BC41617356AB6004F1E75 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0C1BC41817356AB6004F1E75 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C1BC41917356AB6004F1E75 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C1BC42917356AB6004F1E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C1BC42A17356AB6004F1E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C1BC42C17356AB6004F1E75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Housebook/Housebook-Prefix.pch";
+				INFOPLIST_FILE = "Housebook/Housebook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C1BC42D17356AB6004F1E75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Housebook/Housebook-Prefix.pch";
+				INFOPLIST_FILE = "Housebook/Housebook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C1BC3F517356AB6004F1E75 /* Build configuration list for PBXProject "Housebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1BC42917356AB6004F1E75 /* Debug */,
+				0C1BC42A17356AB6004F1E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C1BC42B17356AB6004F1E75 /* Build configuration list for PBXNativeTarget "Housebook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1BC42C17356AB6004F1E75 /* Debug */,
+				0C1BC42D17356AB6004F1E75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C1BC3F217356AB6004F1E75 /* Project object */;
+}
