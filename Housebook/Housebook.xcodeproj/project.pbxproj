@@ -52,6 +52,15 @@
 		30042C1D1735A687002ACE9D /* HBOpinion.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C1C1735A687002ACE9D /* HBOpinion.m */; };
 		30042C1F173613A7002ACE9D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042C1E173613A7002ACE9D /* MobileCoreServices.framework */; };
 		30042C2217361C09002ACE9D /* HBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C2117361C09002ACE9D /* HBCameraViewController.m */; };
+		30948355173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png in Resources */ = {isa = PBXBuildFile; fileRef = 30948354173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png */; };
+		3094835917362C1C00D5089A /* HouseBook_Splash320x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094835617362C1C00D5089A /* HouseBook_Splash320x960.png */; };
+		3094835A17362C1C00D5089A /* housebook-logo_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094835717362C1C00D5089A /* housebook-logo_57x57.png */; };
+		3094835B17362C1C00D5089A /* housebook-logo_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094835817362C1C00D5089A /* housebook-logo_114x114.png */; };
+		3094835D17362C4000D5089A /* housebook-logo_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094835C17362C4000D5089A /* housebook-logo_57x57.png */; };
+		3094835F17362C4C00D5089A /* housebook-logo_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094835E17362C4C00D5089A /* housebook-logo_114x114.png */; };
+		3094836117362C6100D5089A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836017362C6100D5089A /* Default@2x.png */; };
+		3094836317362C7100D5089A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836217362C7100D5089A /* Default.png */; };
+		3094836517362C9200D5089A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836417362C9200D5089A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +139,15 @@
 		30042C1E173613A7002ACE9D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		30042C2017361C09002ACE9D /* HBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCameraViewController.h; sourceTree = "<group>"; };
 		30042C2117361C09002ACE9D /* HBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCameraViewController.m; sourceTree = "<group>"; };
+		30948354173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "housebook-logo_4lj0x50of0iogbuo.png"; sourceTree = "<group>"; };
+		3094835617362C1C00D5089A /* HouseBook_Splash320x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HouseBook_Splash320x960.png; sourceTree = "<group>"; };
+		3094835717362C1C00D5089A /* housebook-logo_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "housebook-logo_57x57.png"; sourceTree = "<group>"; };
+		3094835817362C1C00D5089A /* housebook-logo_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "housebook-logo_114x114.png"; sourceTree = "<group>"; };
+		3094835C17362C4000D5089A /* housebook-logo_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "housebook-logo_57x57.png"; sourceTree = "<group>"; };
+		3094835E17362C4C00D5089A /* housebook-logo_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "housebook-logo_114x114.png"; sourceTree = "<group>"; };
+		3094836017362C6100D5089A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3094836217362C7100D5089A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3094836417362C9200D5089A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +174,11 @@
 		0C1BC3F117356AB6004F1E75 = {
 			isa = PBXGroup;
 			children = (
+				3094836417362C9200D5089A /* Default-568h@2x.png */,
+				3094836217362C7100D5089A /* Default.png */,
+				3094836017362C6100D5089A /* Default@2x.png */,
+				3094835E17362C4C00D5089A /* housebook-logo_114x114.png */,
+				3094835C17362C4000D5089A /* housebook-logo_57x57.png */,
 				30042C1E173613A7002ACE9D /* MobileCoreServices.framework */,
 				30042BBA17357651002ACE9D /* CFNetwork.framework */,
 				30042BB817357645002ACE9D /* Security.framework */,
@@ -190,6 +213,10 @@
 		0C1BC40317356AB6004F1E75 /* Housebook */ = {
 			isa = PBXGroup;
 			children = (
+				30948354173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png */,
+				3094835617362C1C00D5089A /* HouseBook_Splash320x960.png */,
+				3094835717362C1C00D5089A /* housebook-logo_57x57.png */,
+				3094835817362C1C00D5089A /* housebook-logo_114x114.png */,
 				30042BF71735A587002ACE9D /* JSONModel */,
 				30042BEC1735A531002ACE9D /* HUD */,
 				0CBBDA001735A880007EEBCC /* house.jpg */,
@@ -388,6 +415,15 @@
 				30042BF31735A531002ACE9D /* btnCheck.png in Resources */,
 				30042BF41735A531002ACE9D /* btnCheck@2x.png in Resources */,
 				0CBBDA011735A880007EEBCC /* house.jpg in Resources */,
+				30948355173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png in Resources */,
+				3094835917362C1C00D5089A /* HouseBook_Splash320x960.png in Resources */,
+				3094835A17362C1C00D5089A /* housebook-logo_57x57.png in Resources */,
+				3094835B17362C1C00D5089A /* housebook-logo_114x114.png in Resources */,
+				3094835D17362C4000D5089A /* housebook-logo_57x57.png in Resources */,
+				3094835F17362C4C00D5089A /* housebook-logo_114x114.png in Resources */,
+				3094836117362C6100D5089A /* Default@2x.png in Resources */,
+				3094836317362C7100D5089A /* Default.png in Resources */,
+				3094836517362C9200D5089A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

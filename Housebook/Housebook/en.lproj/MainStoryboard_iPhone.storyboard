@@ -12,17 +12,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-nO-40X">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="IdR-XL-Vm7"/>
-                                    <constraint firstAttribute="height" constant="504" id="q68-hk-wEE"/>
-                                </constraints>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1b-nO-40X"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="X1b-nO-40X" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="aTc-SX-rsc"/>
-                            <constraint firstItem="X1b-nO-40X" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="-29" id="viW-fv-6mn"/>
+                            <constraint firstItem="X1b-nO-40X" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" type="default" id="GlV-KV-QJb"/>
+                            <constraint firstItem="X1b-nO-40X" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="bWE-jF-SxR"/>
+                            <constraint firstItem="X1b-nO-40X" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="yQ5-m1-FZA"/>
+                            <constraint firstItem="X1b-nO-40X" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="zMV-UM-mPH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="HomeBook" id="ilR-nY-PD6">
@@ -198,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhM-En-Ued" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="606"/>
+            <point key="canvasLocation" x="637" y="715"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="TPH-Xf-a8A">
@@ -452,8 +449,6 @@
             <relationships>
                 <relationship kind="action" name="PictureTime:" candidateClass="UIButton"/>
                 <relationship kind="action" name="TalkToMe:" candidateClass="UIButton"/>
-                <relationship kind="action" name="commands:"/>
-                <relationship kind="action" name="recognize:"/>
                 <relationship kind="outlet" name="Floors" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="Interiors" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="Paint" candidateClass="UISlider"/>
