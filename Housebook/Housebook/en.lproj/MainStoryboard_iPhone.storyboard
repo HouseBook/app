@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="odn-zK-xdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="odn-zK-xdH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -76,7 +76,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="TalkToMe:" destination="lOn-LP-Df3" eventType="touchUpInside" id="aUO-2b-owO"/>
+                                    <action selector="PictureTime:" destination="lOn-LP-Df3" eventType="touchUpInside" id="i1e-zG-65M"/>
+                                    <segue destination="GpV-EK-bXM" kind="push" id="tn2-Sg-F6n"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rna-3V-Y8D">
@@ -189,12 +190,54 @@
                         <barButtonItem key="backBarButtonItem" title="Property" id="jbc-58-u75"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="Floors" destination="hH6-9x-d3i" id="qU9-oe-IBj"/>
+                        <outlet property="Interiors" destination="hEH-9H-NMG" id="See-Hg-5fp"/>
+                        <outlet property="Paint" destination="hEH-9H-NMG" id="PQe-Gz-cy9"/>
                         <outlet property="SpeechDebug" destination="rna-3V-Y8D" id="mis-BC-fes"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhM-En-Ued" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="696" y="606"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="TPH-Xf-a8A">
+            <objects>
+                <viewController id="GpV-EK-bXM" customClass="HBCameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VeE-eN-fcC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tn5-bO-0nq">
+                                <items>
+                                    <barButtonItem title="Camera" id="pXa-QU-zFo">
+                                        <connections>
+                                            <action selector="Camera:" destination="GpV-EK-bXM" id="rqw-bI-ke3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-6j-WIk"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w3L-6j-WIk" firstAttribute="leading" secondItem="VeE-eN-fcC" secondAttribute="leading" type="default" id="15y-WU-Sit"/>
+                            <constraint firstItem="w3L-6j-WIk" firstAttribute="top" secondItem="VeE-eN-fcC" secondAttribute="top" type="default" id="CFD-PE-oit"/>
+                            <constraint firstItem="Tn5-bO-0nq" firstAttribute="trailing" secondItem="VeE-eN-fcC" secondAttribute="trailing" type="default" id="YDv-wJ-CwC"/>
+                            <constraint firstItem="w3L-6j-WIk" firstAttribute="trailing" secondItem="VeE-eN-fcC" secondAttribute="trailing" type="default" id="fne-ob-Ckn"/>
+                            <constraint firstItem="Tn5-bO-0nq" firstAttribute="bottom" secondItem="VeE-eN-fcC" secondAttribute="bottom" type="default" id="fvx-qk-U6k"/>
+                            <constraint firstItem="Tn5-bO-0nq" firstAttribute="leading" secondItem="VeE-eN-fcC" secondAttribute="leading" type="default" id="gUn-VG-JHL"/>
+                            <constraint firstItem="w3L-6j-WIk" firstAttribute="bottom" secondItem="Tn5-bO-0nq" secondAttribute="top" type="default" id="qCC-og-lY6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jfQ-bh-1Fd"/>
+                    <connections>
+                        <outlet property="PictureTime" destination="w3L-6j-WIk" id="CZE-wY-lG5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ayQ-1c-vwP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="606"/>
         </scene>
         <!--Feature Controller-->
         <scene sceneID="BK7-Eb-zSP">
@@ -397,12 +440,23 @@
         <image name="second" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="HBCameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBCameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="useCamera:"/>
+                <relationship kind="outlet" name="PictureTime" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="HBCollectInfoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HBCollectInfoViewController.h"/>
             <relationships>
+                <relationship kind="action" name="PictureTime:" candidateClass="UIButton"/>
                 <relationship kind="action" name="TalkToMe:" candidateClass="UIButton"/>
                 <relationship kind="action" name="commands:"/>
                 <relationship kind="action" name="recognize:"/>
+                <relationship kind="outlet" name="Floors" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="Interiors" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="Paint" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="SpeechDebug" candidateClass="UILabel"/>
             </relationships>
         </class>

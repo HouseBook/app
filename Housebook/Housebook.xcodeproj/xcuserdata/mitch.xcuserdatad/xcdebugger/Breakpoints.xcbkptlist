@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Housebook/HBCollectInfoViewController.m"
-         timestampString = "389397026.320397"
+         timestampString = "389424198.617352"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "113"
-         endingLineNumber = "113"
+         startingLineNumber = "117"
+         endingLineNumber = "117"
          landmarkName = "-recognition:didGetRecognitionResult:"
          landmarkType = "5">
       </FileBreakpoint>

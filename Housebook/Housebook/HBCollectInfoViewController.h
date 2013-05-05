@@ -14,6 +14,11 @@
 
 @interface HBCollectInfoViewController : UIViewController <ISSpeechRecognitionDelegate>
 - (IBAction)TalkToMe:(UIButton *)sender;
+- (IBAction)PictureTime:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UISlider *Interiors;
+@property (weak, nonatomic) IBOutlet UISlider *Floors;
+@property (weak, nonatomic) IBOutlet UISlider *Paint;
 
 @property (weak, nonatomic) IBOutlet UILabel *SpeechDebug;
 

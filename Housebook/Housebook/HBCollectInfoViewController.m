@@ -57,6 +57,7 @@ HBOpinion * _opinion;
                                        //hide the loader view
                                        [HUD hideUIBlockingIndicator];
                                        
+                                       
                                        //json sent
                                        NSLog(@"Data: %@", _opinion.toJSONString);
                                        NSLog(@"Error: %@", [err localizedDescription]);
@@ -67,6 +68,9 @@ HBOpinion * _opinion;
 
 - (IBAction)TalkToMe:(UIButton *)sender {
     [self recognize:nil];
+}
+
+- (IBAction)PictureTime:(UIButton *)sender {
 }
 
 - (IBAction)recognize:(id)sender {

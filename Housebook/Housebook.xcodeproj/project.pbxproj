@@ -50,6 +50,8 @@
 		30042C191735A587002ACE9D /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C0E1735A587002ACE9D /* JSONKeyMapper.m */; };
 		30042C1A1735A587002ACE9D /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C101735A587002ACE9D /* JSONValueTransformer.m */; };
 		30042C1D1735A687002ACE9D /* HBOpinion.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C1C1735A687002ACE9D /* HBOpinion.m */; };
+		30042C1F173613A7002ACE9D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042C1E173613A7002ACE9D /* MobileCoreServices.framework */; };
+		30042C2217361C09002ACE9D /* HBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30042C2117361C09002ACE9D /* HBCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +127,9 @@
 		30042C101735A587002ACE9D /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		30042C1B1735A687002ACE9D /* HBOpinion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBOpinion.h; sourceTree = "<group>"; };
 		30042C1C1735A687002ACE9D /* HBOpinion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBOpinion.m; sourceTree = "<group>"; };
+		30042C1E173613A7002ACE9D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		30042C2017361C09002ACE9D /* HBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBCameraViewController.h; sourceTree = "<group>"; };
+		30042C2117361C09002ACE9D /* HBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBCameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30042C1F173613A7002ACE9D /* MobileCoreServices.framework in Frameworks */,
 				30042BBB17357651002ACE9D /* CFNetwork.framework in Frameworks */,
 				30042BB917357645002ACE9D /* Security.framework in Frameworks */,
 				30042BB717357635002ACE9D /* SystemConfiguration.framework in Frameworks */,
@@ -150,6 +156,7 @@
 		0C1BC3F117356AB6004F1E75 = {
 			isa = PBXGroup;
 			children = (
+				30042C1E173613A7002ACE9D /* MobileCoreServices.framework */,
 				30042BBA17357651002ACE9D /* CFNetwork.framework */,
 				30042BB817357645002ACE9D /* Security.framework */,
 				30042BB617357635002ACE9D /* SystemConfiguration.framework */,
@@ -183,12 +190,9 @@
 		0C1BC40317356AB6004F1E75 /* Housebook */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				30042BF71735A587002ACE9D /* JSONModel */,
 				30042BEC1735A531002ACE9D /* HUD */,
-=======
 				0CBBDA001735A880007EEBCC /* house.jpg */,
->>>>>>> e1a4b9ce644f3afd81184abf41a75c4395dd8aac
 				30042BBC173577C9002ACE9D /* Headers */,
 				0C1BC40C17356AB6004F1E75 /* HBAppDelegate.h */,
 				0C1BC40D17356AB6004F1E75 /* HBAppDelegate.m */,
@@ -205,15 +209,14 @@
 				0C1BC40417356AB6004F1E75 /* Supporting Files */,
 				30042BC317358487002ACE9D /* HBCollectInfoViewController.h */,
 				30042BC417358487002ACE9D /* HBCollectInfoViewController.m */,
-<<<<<<< HEAD
 				30042C1B1735A687002ACE9D /* HBOpinion.h */,
 				30042C1C1735A687002ACE9D /* HBOpinion.m */,
-=======
 				0C519E9B17359999001DF43F /* HBPropertyFeatureController.h */,
 				0C519E9C17359999001DF43F /* HBPropertyFeatureController.m */,
 				0CBBD9FD17359DBC007EEBCC /* HBFeatureController.h */,
 				0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */,
->>>>>>> e1a4b9ce644f3afd81184abf41a75c4395dd8aac
+				30042C2017361C09002ACE9D /* HBCameraViewController.h */,
+				30042C2117361C09002ACE9D /* HBCameraViewController.m */,
 			);
 			path = Housebook;
 			sourceTree = "<group>";
@@ -382,12 +385,9 @@
 				0C1BC42617356AB6004F1E75 /* second.png in Resources */,
 				0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */,
 				30042BB31735754F002ACE9D /* iSpeechSDK.bundle in Resources */,
-<<<<<<< HEAD
 				30042BF31735A531002ACE9D /* btnCheck.png in Resources */,
 				30042BF41735A531002ACE9D /* btnCheck@2x.png in Resources */,
-=======
 				0CBBDA011735A880007EEBCC /* house.jpg in Resources */,
->>>>>>> e1a4b9ce644f3afd81184abf41a75c4395dd8aac
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +403,6 @@
 				0C1BC41D17356AB6004F1E75 /* HBFirstViewController.m in Sources */,
 				0C1BC42417356AB6004F1E75 /* HBSecondViewController.m in Sources */,
 				30042BC517358487002ACE9D /* HBCollectInfoViewController.m in Sources */,
-<<<<<<< HEAD
 				30042BF51735A531002ACE9D /* HUD.m in Sources */,
 				30042BF61735A531002ACE9D /* MBProgressHUD.m in Sources */,
 				30042C111735A587002ACE9D /* JSONModel.m in Sources */,
@@ -417,10 +416,9 @@
 				30042C191735A587002ACE9D /* JSONKeyMapper.m in Sources */,
 				30042C1A1735A587002ACE9D /* JSONValueTransformer.m in Sources */,
 				30042C1D1735A687002ACE9D /* HBOpinion.m in Sources */,
-=======
 				0C519E9D17359999001DF43F /* HBPropertyFeatureController.m in Sources */,
 				0CBBD9FF17359DBC007EEBCC /* HBFeatureController.m in Sources */,
->>>>>>> e1a4b9ce644f3afd81184abf41a75c4395dd8aac
+				30042C2217361C09002ACE9D /* HBCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
