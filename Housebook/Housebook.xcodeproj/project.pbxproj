@@ -26,6 +26,14 @@
 		0C1BC42817356AB6004F1E75 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1BC42717356AB6004F1E75 /* second@2x.png */; };
 		0C1BC42F17356B86004F1E75 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1BC42E17356B86004F1E75 /* MapKit.framework */; };
 		0C519E9D17359999001DF43F /* HBPropertyFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C519E9C17359999001DF43F /* HBPropertyFeatureController.m */; };
+		0C7140381736C18000C7B50D /* NimbusPhotos.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C7140371736C18000C7B50D /* NimbusPhotos.bundle */; };
+		0C71403E1736D20600C7B50D /* room.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C71403A1736D20600C7B50D /* room.jpeg */; };
+		0C71403F1736D20600C7B50D /* room2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C71403B1736D20600C7B50D /* room2.jpeg */; };
+		0C7140401736D20600C7B50D /* room3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C71403C1736D20600C7B50D /* room3.jpeg */; };
+		0C7140411736D20600C7B50D /* room4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C71403D1736D20600C7B50D /* room4.jpeg */; };
+		0C71404B1736D27900C7B50D /* room5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C7140481736D27900C7B50D /* room5.jpeg */; };
+		0C71404C1736D27900C7B50D /* room6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C7140491736D27900C7B50D /* room6.jpeg */; };
+		0C71404D1736D27900C7B50D /* room7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C71404A1736D27900C7B50D /* room7.jpeg */; };
 		0CBBD9FF17359DBC007EEBCC /* HBFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */; };
 		0CBBDA011735A880007EEBCC /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBDA001735A880007EEBCC /* house.jpg */; };
 		30042BB117357529002ACE9D /* libiSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30042BB017357528002ACE9D /* libiSpeechSDK.a */; };
@@ -90,6 +98,14 @@
 		0C1BC42E17356B86004F1E75 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0C519E9B17359999001DF43F /* HBPropertyFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBPropertyFeatureController.h; sourceTree = "<group>"; };
 		0C519E9C17359999001DF43F /* HBPropertyFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBPropertyFeatureController.m; sourceTree = "<group>"; };
+		0C7140371736C18000C7B50D /* NimbusPhotos.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NimbusPhotos.bundle; path = ../../../../nimbus/nimbus/src/photos/resources/NimbusPhotos.bundle; sourceTree = "<group>"; };
+		0C71403A1736D20600C7B50D /* room.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room.jpeg; path = houseImgs/room.jpeg; sourceTree = "<group>"; };
+		0C71403B1736D20600C7B50D /* room2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room2.jpeg; path = houseImgs/room2.jpeg; sourceTree = "<group>"; };
+		0C71403C1736D20600C7B50D /* room3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room3.jpeg; path = houseImgs/room3.jpeg; sourceTree = "<group>"; };
+		0C71403D1736D20600C7B50D /* room4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room4.jpeg; path = houseImgs/room4.jpeg; sourceTree = "<group>"; };
+		0C7140481736D27900C7B50D /* room5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room5.jpeg; path = houseImgs/room5.jpeg; sourceTree = "<group>"; };
+		0C7140491736D27900C7B50D /* room6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room6.jpeg; path = houseImgs/room6.jpeg; sourceTree = "<group>"; };
+		0C71404A1736D27900C7B50D /* room7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = room7.jpeg; path = houseImgs/room7.jpeg; sourceTree = "<group>"; };
 		0CBBD9FD17359DBC007EEBCC /* HBFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBFeatureController.h; sourceTree = "<group>"; };
 		0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBFeatureController.m; sourceTree = "<group>"; };
 		0CBBDA001735A880007EEBCC /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
@@ -213,6 +229,13 @@
 		0C1BC40317356AB6004F1E75 /* Housebook */ = {
 			isa = PBXGroup;
 			children = (
+				0C7140481736D27900C7B50D /* room5.jpeg */,
+				0C7140491736D27900C7B50D /* room6.jpeg */,
+				0C71404A1736D27900C7B50D /* room7.jpeg */,
+				0C71403A1736D20600C7B50D /* room.jpeg */,
+				0C71403B1736D20600C7B50D /* room2.jpeg */,
+				0C71403C1736D20600C7B50D /* room3.jpeg */,
+				0C71403D1736D20600C7B50D /* room4.jpeg */,
 				30948354173627AC00D5089A /* housebook-logo_4lj0x50of0iogbuo.png */,
 				3094835617362C1C00D5089A /* HouseBook_Splash320x960.png */,
 				3094835717362C1C00D5089A /* housebook-logo_57x57.png */,
@@ -251,6 +274,7 @@
 		0C1BC40417356AB6004F1E75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C7140371736C18000C7B50D /* NimbusPhotos.bundle */,
 				30042BB21735754F002ACE9D /* iSpeechSDK.bundle */,
 				0C1BC40517356AB6004F1E75 /* Housebook-Info.plist */,
 				0C1BC40617356AB6004F1E75 /* InfoPlist.strings */,
@@ -424,6 +448,14 @@
 				3094836117362C6100D5089A /* Default@2x.png in Resources */,
 				3094836317362C7100D5089A /* Default.png in Resources */,
 				3094836517362C9200D5089A /* Default-568h@2x.png in Resources */,
+				0C7140381736C18000C7B50D /* NimbusPhotos.bundle in Resources */,
+				0C71403E1736D20600C7B50D /* room.jpeg in Resources */,
+				0C71403F1736D20600C7B50D /* room2.jpeg in Resources */,
+				0C7140401736D20600C7B50D /* room3.jpeg in Resources */,
+				0C7140411736D20600C7B50D /* room4.jpeg in Resources */,
+				0C71404B1736D27900C7B50D /* room5.jpeg in Resources */,
+				0C71404C1736D27900C7B50D /* room6.jpeg in Resources */,
+				0C71404D1736D27900C7B50D /* room7.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
