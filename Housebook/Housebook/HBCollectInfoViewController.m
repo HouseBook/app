@@ -15,6 +15,7 @@
 
 @implementation HBCollectInfoViewController 
 HBOpinion * _opinion;
+NSArray *photos;
 
 @synthesize SpeechDebug;
 
@@ -31,7 +32,35 @@ HBOpinion * _opinion;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    photos =  [NSArray arrayWithObjects:@"room.jpeg", @"room2.jpeg", @"room3.jpeg", @"room4.jpeg", @"room5.jpeg", @"room6.jpeg", @"room7.jpeg", nil];
+
+
 }
+
+#pragma mark - UICollectionView Datasource
+// 1
+- (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
+    return 7;
+}
+// 2
+- (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
+    return 1;
+}
+// 3
+- (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"PicCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    UIImageView *view = (UIImageView *)[cell viewWithTag:100];
+    view.image = [UIImage imageNamed:[photos objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+// 4
+/*- (UICollectionReusableView *)collectionView:
+ (UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+ {
+ return [[UICollectionReusableView alloc] init];
+ }*/
 
 - (void)didReceiveMemoryWarning
 {

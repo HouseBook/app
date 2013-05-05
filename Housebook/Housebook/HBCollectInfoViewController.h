@@ -12,7 +12,9 @@
 #import "HBOpinion.h"
 #import "HUD.h"
 
-@interface HBCollectInfoViewController : UIViewController <ISSpeechRecognitionDelegate>
+@interface HBCollectInfoViewController : UIViewController
+<ISSpeechRecognitionDelegate,
+ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 - (IBAction)TalkToMe:(UIButton *)sender;
 - (IBAction)PictureTime:(UIButton *)sender;
 
