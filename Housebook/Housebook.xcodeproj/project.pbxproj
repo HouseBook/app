@@ -61,6 +61,7 @@
 		3094836117362C6100D5089A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836017362C6100D5089A /* Default@2x.png */; };
 		3094836317362C7100D5089A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836217362C7100D5089A /* Default.png */; };
 		3094836517362C9200D5089A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3094836417362C9200D5089A /* Default-568h@2x.png */; };
+		309483681736E20900D5089A /* HBScrapbookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 309483671736E20900D5089A /* HBScrapbookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +149,8 @@
 		3094836017362C6100D5089A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3094836217362C7100D5089A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3094836417362C9200D5089A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		309483661736E20900D5089A /* HBScrapbookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBScrapbookViewController.h; sourceTree = "<group>"; };
+		309483671736E20900D5089A /* HBScrapbookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBScrapbookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,8 @@
 				0CBBD9FE17359DBC007EEBCC /* HBFeatureController.m */,
 				30042C2017361C09002ACE9D /* HBCameraViewController.h */,
 				30042C2117361C09002ACE9D /* HBCameraViewController.m */,
+				309483661736E20900D5089A /* HBScrapbookViewController.h */,
+				309483671736E20900D5089A /* HBScrapbookViewController.m */,
 			);
 			path = Housebook;
 			sourceTree = "<group>";
@@ -455,6 +460,7 @@
 				0C519E9D17359999001DF43F /* HBPropertyFeatureController.m in Sources */,
 				0CBBD9FF17359DBC007EEBCC /* HBFeatureController.m in Sources */,
 				30042C2217361C09002ACE9D /* HBCameraViewController.m in Sources */,
+				309483681736E20900D5089A /* HBScrapbookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

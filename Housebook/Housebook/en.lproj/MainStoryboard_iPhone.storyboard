@@ -197,6 +197,37 @@
             </objects>
             <point key="canvasLocation" x="637" y="715"/>
         </scene>
+        <!--Scrapbook View Controller - Scrapbook-->
+        <scene sceneID="WF5-BU-KuA">
+            <objects>
+                <viewController id="CTG-io-SPZ" customClass="HBScrapbookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOQ-yi-BcK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gol-Tu-HjE">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gol-Tu-HjE" firstAttribute="trailing" secondItem="MOQ-yi-BcK" secondAttribute="trailing" type="default" id="IWh-cu-bsT"/>
+                            <constraint firstItem="gol-Tu-HjE" firstAttribute="bottom" secondItem="MOQ-yi-BcK" secondAttribute="bottom" type="default" id="Zc2-ve-iKY"/>
+                            <constraint firstItem="gol-Tu-HjE" firstAttribute="leading" secondItem="MOQ-yi-BcK" secondAttribute="leading" type="default" id="cU5-dg-NbM"/>
+                            <constraint firstItem="gol-Tu-HjE" firstAttribute="top" secondItem="MOQ-yi-BcK" secondAttribute="top" type="default" id="z2r-Au-kP5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scrapbook" id="M1S-FB-CKq">
+                        <barButtonItem key="backBarButtonItem" title="show" id="fnG-jS-3bR"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="gol-Tu-HjE" id="8xe-8c-uGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4s-Wz-eK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1113" y="-62"/>
+        </scene>
         <!--Camera View Controller-->
         <scene sceneID="TPH-Xf-a8A">
             <objects>
@@ -369,6 +400,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPb-ZF-msj">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Scrapbook">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CTG-io-SPZ" kind="push" id="5zC-2P-NbW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -376,6 +420,7 @@
                             <constraint firstAttribute="trailing" secondItem="Jrr-C2-ejV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2gX-2T-89z"/>
                             <constraint firstItem="Xzb-HB-P4b" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" type="default" id="5NG-1E-wfQ"/>
                             <constraint firstAttribute="trailing" secondItem="uOn-kW-rAl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5T5-JH-Her"/>
+                            <constraint firstItem="iPb-ZF-msj" firstAttribute="top" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9eZ-8u-o66"/>
                             <constraint firstAttribute="trailing" secondItem="5AT-jh-pXt" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="BAh-c8-54h"/>
                             <constraint firstItem="Shj-xX-WaU" firstAttribute="leading" secondItem="sjF-N0-8D6" secondAttribute="leading" constant="28" id="Bla-Xp-VX8"/>
                             <constraint firstItem="XZz-kJ-m3q" firstAttribute="leading" secondItem="uOn-kW-rAl" secondAttribute="leading" type="default" id="Bnn-B2-tHn"/>
@@ -396,13 +441,14 @@
                             <constraint firstItem="Iwk-ft-sVD" firstAttribute="leading" secondItem="Rp2-TV-dE1" secondAttribute="leading" type="default" id="bay-ax-1R6"/>
                             <constraint firstItem="BZP-j2-yJd" firstAttribute="leading" secondItem="Shj-xX-WaU" secondAttribute="leading" type="default" id="e4V-bD-lko"/>
                             <constraint firstItem="Jrr-C2-ejV" firstAttribute="leading" secondItem="XZz-kJ-m3q" secondAttribute="leading" type="default" id="eEp-0u-0u2"/>
+                            <constraint firstItem="iPb-ZF-msj" firstAttribute="centerX" secondItem="RqS-Nu-tlr" secondAttribute="centerX" type="default" id="fjK-ua-z65"/>
                             <constraint firstItem="Jrr-C2-ejV" firstAttribute="top" secondItem="sjF-N0-8D6" secondAttribute="top" constant="238" id="g0p-kN-Uac"/>
                             <constraint firstItem="5AT-jh-pXt" firstAttribute="leading" secondItem="Jrr-C2-ejV" secondAttribute="leading" type="default" id="jMA-tb-zRX"/>
                             <constraint firstItem="Rp2-TV-dE1" firstAttribute="leading" secondItem="J7U-6E-t90" secondAttribute="leading" type="default" id="jRr-eB-hil"/>
                             <constraint firstAttribute="trailing" secondItem="g1o-Ln-FQq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lXc-Zi-afd"/>
+                            <constraint firstAttribute="bottom" secondItem="iPb-ZF-msj" secondAttribute="bottom" constant="7" id="lZe-rw-J3y"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="baseline" secondItem="BZP-j2-yJd" secondAttribute="baseline" type="default" id="mY1-mr-X65"/>
                             <constraint firstItem="uOn-kW-rAl" firstAttribute="leading" secondItem="g1o-Ln-FQq" secondAttribute="leading" type="default" id="orV-hq-utt"/>
-                            <constraint firstAttribute="bottom" secondItem="Iwk-ft-sVD" secondAttribute="bottom" constant="58" id="p9h-3u-nvM"/>
                             <constraint firstItem="RqS-Nu-tlr" firstAttribute="centerX" secondItem="Xzb-HB-P4b" secondAttribute="centerX" type="default" id="syL-Ce-ede"/>
                         </constraints>
                     </view>
@@ -436,38 +482,6 @@
         <image name="house.jpg" width="800" height="560"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="HBCameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBCameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="useCamera:"/>
-                <relationship kind="outlet" name="PictureTime" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="HBCollectInfoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBCollectInfoViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="PictureTime:" candidateClass="UIButton"/>
-                <relationship kind="action" name="TalkToMe:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="Floors" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="Interiors" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="Paint" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="SpeechDebug" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="HBFeatureController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBFeatureController.h"/>
-        </class>
-        <class className="HBSecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HBSecondViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
